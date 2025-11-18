@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voltrix Contatos</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      background: radial-gradient(circle at top, #1d033b, #090014 70%);
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    body::before,
+    body::after {
+      content: "";
+      position: absolute;
+      width: 140%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #4af3ff, transparent);
+      animation: move 6s linear infinite;
+      opacity: 0.4;
+    }
+    body::after {
+      top: 70%;
+      animation-duration: 8s;
+      background: linear-gradient(90deg, transparent, #ff2cfb, transparent);
+    }
+    @keyframes move {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      text-shadow: 0 0 10px #ffffff55;
+    }
+    .logo {
+      width: 160px;
+      margin-bottom: 24px;
+      opacity: 0.95;
+    }
+    .btn {
+      display: block;
+      width: 260px;
+      padding: 14px;
+      margin: 12px 0;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: 0.2s;
+      box-shadow: 0 0 12px #25d36688;
+    }
+    .btn:hover {
+      background: #1ebe5d;
+      box-shadow: 0 0 18px #25d366cc;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+  <img src="logo-voltrix.png" alt="Voltrix Logo" class="logo" />
+  <h1>Escolha um contato</h1>
+
+  <a class="btn" href="https://wa.me/5562999557883" target="_blank">Phillipy — WhatsApp</a>
+  <a class="btn" href="https://wa.me/5562993236519" target="_blank">Klinthon — WhatsApp</a>
+  <a class="btn" href="https://wa.me/5562981125576" target="_blank">Ana Flavia — WhatsApp</a>
+</body>
+</html>
